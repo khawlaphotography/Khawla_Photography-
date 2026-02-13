@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khawla Photography | لحظاتك الخالدة</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-family:'Amiri',serif;
+    color:white;
+    background:
+    linear-gradient(rgba(10,10,10,0.6),rgba(0,0,0,0.7)),
+    url('https://i.postimg.cc/MG84kx89/file-000000007dbc722fadab0344567326df.png')
+    no-repeat center center fixed;
+    background-size:cover;
+}
+
+.container{
+    width:90%;
+    max-width:900px;
+    padding:30px 0;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    position: relative;
+}
+
+/* تأثيرات الحركة */
+/* تأثير الظهور الناعم */
+/* سطر 44: إعدادات صندوق الترحيب قبل الظهور */
+#welcomeBox {
+    opacity: 0;
+    transform: translateY(15px); /* يبدأ نازل قليلاً */
+    transition: opacity 1.8s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 1.8s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto 15px auto;
+}
+
+/* الكلاس الذي يفعله السكربت للترحيب */
+.welcome-animation {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* سطر 60: إعدادات المحتوى الباقي قبل الظهور */
+#restContent {
+    opacity: 0;
+    transform: translateY(30px); /* يبدأ من مسافة أبعد قليلاً */
+    transition: opacity 2s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* الكلاس الذي يفعله السكربت للمحتوى */
+#restContent.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.glass-box{
+    background:rgba(15,15,20,0.35);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,0.18);
+    border-radius:30px;
+    padding:25px 20px;
+    text-align:center;
+    box-shadow:0 15px 30px rgba(0,0,0,0.6);
+    transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.glass-box:hover{
+    transform:translateY(-3px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.8);
+}
+
+.welcome-box {
+    background:rgba(15,15,20,0.5);
+    backdrop-filter:blur(25px);
+    border:2px solid rgba(255,215,0,0.3);
+    width: 80%;
+    margin: 0 auto 15px auto;
+    position: relative;
+    z-index: 100;
+}
+
+h1{
+    font-size:2.5rem;
+    margin-bottom:8px;
+    text-shadow:2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.subtitle{
+    font-size:1.3rem;
+    opacity:.9;
+}
+
+.section-title{
+    font-size:2rem;
+    margin:15px 0 8px;
+    text-align:center;
+    font-weight:bold;
+    text-shadow:1px 1px 5px black;
+}
+
+/* شبكة الباقات: مربعين متجاورين */
+.packages-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:15px;
+    width:100%;
+}
+
+.package-card{
+    padding:20px 15px;
+    display:flex;
+    flex-direction:column;
+    height: 100%;
+}
+
+.package-card h3{
+    font-size:1.7rem;
+    border-bottom:2px solid rgba(255,215,0,0.5);
+    padding-bottom:10px;
+    margin-bottom:15px;
+    color:#FFE5A3;
+}
+
+ul{
+    list-style:none;
+    line-height:1.8;
+    font-size:1.1rem;
+    flex-grow:1;
+}
+
+li{
+    margin-bottom:6px;
+    border-bottom:1px dashed rgba(255,255,255,0.1);
+    padding-bottom:5px;
+}
+
+.about-text{
+    font-style:italic;
+    font-size:1.3rem;
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+.signature{
+    font-size:1.6rem;
+    font-weight:bold;
+    color:#FFD966;
+    letter-spacing:1px;
+}
+
+.social-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin:20px 0 8px;
+}
+
+.social-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:12px 25px;
+    border-radius:50px;
+    font-size:1.2rem;
+    font-weight:bold;
+    text-decoration:none;
+    color:white;
+    border:1px solid rgba(255,255,255,0.3);
+    transition:all .3s ease;
+    min-width:160px;
+}
+
+.social-btn i{
+    font-size:1.5rem;
+}
+
+.social-btn.instagram{
+    background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);
+}
+
+.social-btn.tiktok{
+    background:#000;
+    border-color:#25f4ee;
+}
+
+.social-btn.whatsapp{
+    background:#25D366;
+}
+
+.social-btn:hover{
+    transform:scale(1.05) translateY(-3px);
+    filter:brightness(1.2);
+    box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* معرض الصور */
+.gallery-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+    gap:15px;
+    margin-top:15px;
+}
+
+.gallery-container img{
+    width:100%;
+    max-width: 200px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius:20px;
+    cursor:pointer;
+    transition:transform 0.3s ease;
+    box-shadow:0 10px 20px rgba(0,0,0,0.5);
+    margin: 0 auto;
+    display: block;
+}
+
+.gallery-container img:hover{
+    transform:scale(1.03);
+}
+
+/* Lightbox */
+.lightbox{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    justify-content:center;
+    align-items:center;
+    z-index:2000;
+    cursor: pointer;
+}
+
+.lightbox img{
+    max-width:90%;
+    max-height:85%;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(255,255,255,0.2);
+    border:2px solid rgba(255,255,255,0.3);
+}
+
+/* زر العودة للأعلى */
+#topBtn{
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    padding:12px 17px;
+    border:none;
+    border-radius:50%;
+    background:#FFD966;
+    color:black;
+    font-size:18px;
+    font-weight: bold;
+    cursor:pointer;
+    display:none;
+    box-shadow:0 8px 15px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+    z-index:1500;
+}
+
+#topBtn:hover{
+    transform:scale(1.1);
+    background:#FFE5A3;
+}
+
+footer{
+    margin-top:30px;
+    padding:15px;
+    opacity:.8;
+    font-size:0.9rem;
+    text-align:center;
+    letter-spacing:2px;
+    background:rgba(0,0,0,0.3);
+    width:100%;
+}
+
+/* تحسينات للشاشات الصغيرة */
+@media(max-width:768px){
+    h1{font-size:2.2rem;}
+    .section-title{font-size:1.8rem;}
+    .container{width:95%;}
+    .glass-box{padding:20px 12px;}
+    .about-text{font-size:1.2rem;}
+    .social-btn{padding:10px 20px;font-size:1.1rem;min-width:140px;}
+    
+    .packages-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .welcome-box {
+        width: 95%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- مربع الترحيب -->
+<div class="glass-box welcome-box" id="welcomeBox">
+<h1>شكراً لكم لاختيارنا</h1>
+<p class="subtitle">نسعد بتوثيق لحظاتكم في</p>
+<p style="font-size:1.6rem;font-weight:bold;margin-top:5px;color:#FFE5A3;">
+Khawla Photography
+</p>
+</div>
+
+<!-- باقي المحتوى -->
+<div id="restContent">
+
+<!-- الباقات -->
+<h2 class="section-title">البكجات والخدمات</h2>
+<div class="packages-grid">
+
+<div class="glass-box package-card">
+<h3>باقة الجلسات</h3>
+<ul>
+<li>ساعة تصوير فوتوغرافي</li>
+<li>تعديل احترافي لـ 15 صورة</li>
+<li>تسليم الصور (Reels)</li>
+<li>المقاسات حسب الطلب</li>
+</ul>
+</div>
+
+<div class="glass-box package-card">
+<h3>باقة المناسبات</h3>
+<ul>
+<li>تغطية كاملة للمناسبة</li>
+<li>تصوير فيديو (Reels)</li>
+<li>تعديل احترافي لـ 30 صورة</li>
+<li>ألبوم صور فاخر</li>
+</ul>
+</div>
+
+<div class="glass-box package-card">
+<h3>خدمات إضافية</h3>
+<ul>
+<li>طباعة الصور بجودة عالية</li>
+<li>تصوير منتجات</li>
+<li>فيديو تصوير (Reels قصير)</li>
+<li>تعديل صور إضافي</li>
+</ul>
+</div>
+
+<div class="glass-box package-card">
+<h3>باقة الزفاف</h3>
+<ul>
+<li>تغطية كاملة ليوم الزفاف</li>
+<li>جلسة تصوير عروسين</li>
+<li>ألبوم فاخر 50 صورة</li>
+<li>فيديو highlight</li>
+</ul>
+</div>
+
+<div class="glass-box package-card">
+<h3>باقة الخطوبة</h3>
+<ul>
+<li>جلسة تصوير لمدة ساعتين</li>
+<li>تعديل 25 صورة</li>
+<li>طباعة صور</li>
+<li>فيديو قصير</li>
+</ul>
+</div>
+
+<div class="glass-box package-card">
+<h3>باقة المنتجات</h3>
+<ul>
+<li>تصوير 20 منتج</li>
+<li>تعديل احترافي</li>
+<li>خلفيات بيضاء</li>
+<li>صور جاهزة للتسويق</li>
+</ul>
+</div>
+
+<!-- آخر مربع بالحجم الكبير -->
+<div class="glass-box package-card" style="grid-column: span 2; max-width: 100%; margin: 0 auto;">
+<h3 style="font-size:2rem;">باقة المواليد</h3>
+<ul style="font-size:1.3rem;">
+<li>جلسة تصوير مولود</li>
+<li>إكسسوارات وديكورات</li>
+<li>تعديل 15 صورة</li>
+<li>تصوير عائلي</li>
+</ul>
+</div>
+</div>
+
+<!-- معرض الصور -->
+<h2 class="section-title">معرض الأعمال</h2>
+<div class="glass-box">
+<div class="gallery-container">
+    <img src="https://picsum.photos/id/1043/600/800" alt="صورة من المعرض 1">
+    <img src="https://picsum.photos/id/106/600/800" alt="صورة من المعرض 2">
+    <img src="https://picsum.photos/id/107/600/800" alt="صورة من المعرض 3">
+    <img src="https://picsum.photos/id/108/600/800" alt="صورة من المعرض 4">
+    <img src="https://picsum.photos/id/169/600/800" alt="صورة من المعرض 5">
+    <img src="https://picsum.photos/id/155/600/800" alt="صورة من المعرض 6">
+</div>
+</div>
+
+<!-- النبذة -->
+<h2 class="section-title">KHAWLA PHOTOGRAPHY</h2>
+<div class="glass-box">
+<p class="about-text">
+"في عالمنا، التصوير ليس مجرد ضغطة زر، بل هو تجميد للحظات والمشاعر لتبقى حية للأبد."
+</p>
+<span class="signature">Khawla</span>
+</div>
+
+<!-- التواصل -->
+<div class="glass-box">
+<h2 style="font-size:1.8rem;margin-bottom:15px;color:#FFE5A3;">تواصلوا معنا</h2>
+<div class="social-buttons">
+<a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
+<a href="https://www.tiktok.com/@khawla_photographer" class="social-btn tiktok"><i class="fab fa-tiktok"></i> TikTok</a>
+<a href="https://wa.me/201142308981" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+</div>
+</div>
+
+</div> <!-- restContent -->
+</div> <!-- container -->
+
+<button id="topBtn">↑</button>
+<div class="lightbox" id="lightbox"><img id="lightbox-img"></div>
+<footer>KHAWLA PHOTOGRAPHY © 2026</footer>
+
+<script>
+window.onload = function() {
+    const welcomeBox = document.getElementById('welcomeBox');
+    const restContent = document.getElementById('restContent');
+
+    // تظهر رسالة الترحيب بعد 500 ملي ثانية (نصف ثانية) من فتح الصفحة
+    setTimeout(() => {
+        welcomeBox.classList.add('welcome-animation');
+    }, 500);
+
+    // يظهر باقي المحتوى بسلاسة بعد أن يستقر الترحيب (بعد ثانيتين ونصف)
+    setTimeout(() => {
+        restContent.classList.add('show');
+    }, 2500); 
+};
+
+
+// --- كود زر العودة للأعلى ---
+let topBtn = document.getElementById("topBtn");
+window.onscroll = function() {
+    topBtn.style.display = (window.scrollY > 300) ? "block" : "none";
+};
+topBtn.onclick = function() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+};
+
+// --- كود Lightbox (تكبير الصور) ---
+const images = document.querySelectorAll(".gallery-container img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+images.forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+    document.body.style.overflow = 'auto';
+});
+</script>
+
+</body>
+</html>
