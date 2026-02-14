@@ -31,55 +31,41 @@ body{
 
 .container{
     width:90%;
-    max-width:900px;
-    padding:30px 0;
+    max-width:900px;  /* مصغر من 1100px */
+    padding:30px 0;   /* مصغر من 40px */
     display:flex;
     flex-direction:column;
-    gap:20px;
-    position: relative;
+    gap:20px;         /* مصغر من 30px */
 }
 
-/* تأثيرات الحركة */
-/* تأثير الظهور الناعم */
-/* سطر 44: إعدادات صندوق الترحيب قبل الظهور */
-#welcomeBox {
+/* تأثير الظهور */
+.fade-in {
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(15px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.hidden-content {
     opacity: 0;
-    transform: translateY(15px); /* يبدأ نازل قليلاً */
-    transition: opacity 1.8s cubic-bezier(0.4, 0, 0.2, 1), 
-                transform 1.8s cubic-bezier(0.4, 0, 0.2, 1);
-    width: 80%;
-    max-width: 600px;
-    margin: 20px auto 15px auto;
+    visibility: hidden;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 
-/* الكلاس الذي يفعله السكربت للترحيب */
-.welcome-animation {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-}
-
-/* سطر 60: إعدادات المحتوى الباقي قبل الظهور */
-#restContent {
-    opacity: 0;
-    transform: translateY(30px); /* يبدأ من مسافة أبعد قليلاً */
-    transition: opacity 2s cubic-bezier(0.4, 0, 0.2, 1), 
-                transform 2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* الكلاس الذي يفعله السكربت للمحتوى */
-#restContent.show {
+.hidden-content.show {
     opacity: 1;
-    transform: translateY(0);
+    visibility: visible;
 }
-
 
 .glass-box{
     background:rgba(15,15,20,0.35);
     backdrop-filter:blur(18px);
     -webkit-backdrop-filter:blur(18px);
     border:1px solid rgba(255,255,255,0.18);
-    border-radius:30px;
-    padding:25px 20px;
+    border-radius:30px;        /* مصغر من 40px */
+    padding:25px 20px;         /* مصغر من 35px 30px */
     text-align:center;
     box-shadow:0 15px 30px rgba(0,0,0,0.6);
     transition:transform .3s ease, box-shadow .3s ease;
@@ -96,24 +82,22 @@ body{
     border:2px solid rgba(255,215,0,0.3);
     width: 80%;
     margin: 0 auto 15px auto;
-    position: relative;
-    z-index: 100;
 }
 
 h1{
-    font-size:2.5rem;
+    font-size:2.5rem;          /* مصغر من 3.2rem */
     margin-bottom:8px;
     text-shadow:2px 2px 8px rgba(0,0,0,0.5);
 }
 
 .subtitle{
-    font-size:1.3rem;
+    font-size:1.3rem;          /* مصغر من 1.5rem */
     opacity:.9;
 }
 
 .section-title{
-    font-size:2rem;
-    margin:15px 0 8px;
+    font-size:2rem;            /* مصغر من 2.4rem */
+    margin:15px 0 8px;         /* مصغر من 20px 0 10px */
     text-align:center;
     font-weight:bold;
     text-shadow:1px 1px 5px black;
@@ -123,47 +107,47 @@ h1{
 .packages-grid{
     display:grid;
     grid-template-columns:repeat(2, 1fr);
-    gap:15px;
+    gap:15px;                  /* مصغر من 25px */
     width:100%;
 }
 
 .package-card{
-    padding:20px 15px;
+    padding:20px 15px;         /* مصغر من 30px 20px */
     display:flex;
     flex-direction:column;
     height: 100%;
 }
 
 .package-card h3{
-    font-size:1.7rem;
+    font-size:1.7rem;          /* مصغر من 2rem */
     border-bottom:2px solid rgba(255,215,0,0.5);
-    padding-bottom:10px;
-    margin-bottom:15px;
+    padding-bottom:10px;       /* مصغر من 15px */
+    margin-bottom:15px;        /* مصغر من 20px */
     color:#FFE5A3;
 }
 
 ul{
     list-style:none;
-    line-height:1.8;
-    font-size:1.1rem;
+    line-height:1.8;           /* مصغر من 2.1 */
+    font-size:1.1rem;          /* مصغر من 1.3rem */
     flex-grow:1;
 }
 
 li{
-    margin-bottom:6px;
+    margin-bottom:6px;         /* مصغر من 10px */
     border-bottom:1px dashed rgba(255,255,255,0.1);
-    padding-bottom:5px;
+    padding-bottom:5px;        /* مصغر من 8px */
 }
 
 .about-text{
     font-style:italic;
-    font-size:1.3rem;
-    line-height:1.6;
-    margin-bottom:15px;
+    font-size:1.3rem;          /* مصغر من 1.6rem */
+    line-height:1.6;           /* مصغر من 1.8 */
+    margin-bottom:15px;        /* مصغر من 20px */
 }
 
 .signature{
-    font-size:1.6rem;
+    font-size:1.6rem;          /* مصغر من 1.9rem */
     font-weight:bold;
     color:#FFD966;
     letter-spacing:1px;
@@ -173,28 +157,28 @@ li{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    gap:15px;
-    margin:20px 0 8px;
+    gap:15px;                  /* مصغر من 20px */
+    margin:20px 0 8px;         /* مصغر من 25px 0 10px */
 }
 
 .social-btn{
     display:inline-flex;
     align-items:center;
     justify-content:center;
-    gap:8px;
-    padding:12px 25px;
-    border-radius:50px;
-    font-size:1.2rem;
+    gap:8px;                   /* مصغر من 12px */
+    padding:12px 25px;         /* مصغر من 16px 35px */
+    border-radius:50px;        /* مصغر من 60px */
+    font-size:1.2rem;          /* مصغر من 1.5rem */
     font-weight:bold;
     text-decoration:none;
     color:white;
     border:1px solid rgba(255,255,255,0.3);
     transition:all .3s ease;
-    min-width:160px;
+    min-width:160px;           /* مصغر من 200px */
 }
 
 .social-btn i{
-    font-size:1.5rem;
+    font-size:1.5rem;          /* مصغر من 1.9rem */
 }
 
 .social-btn.instagram{
@@ -219,18 +203,18 @@ li{
 /* معرض الصور */
 .gallery-container{
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); /* مصغر */
     gap:15px;
     margin-top:15px;
 }
 
 .gallery-container img{
     width:100%;
-    max-width: 200px;
+    max-width: 200px;          /* مصغر من 250px */
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    border-radius:20px;
+    border-radius:20px;        /* مصغر من 25px */
     cursor:pointer;
     transition:transform 0.3s ease;
     box-shadow:0 10px 20px rgba(0,0,0,0.5);
@@ -290,12 +274,12 @@ li{
 }
 
 footer{
-    margin-top:30px;
-    padding:15px;
+    margin-top:50px;           /* مصغر من 50px */
+    padding:20px;              /* مصغر من 20px */
     opacity:.8;
-    font-size:0.9rem;
+    font-size:0.9rem;          /* مصغر من 1rem */
     text-align:center;
-    letter-spacing:2px;
+    letter-spacing:3px;        /* مصغر من 3px */
     background:rgba(0,0,0,0.3);
     width:100%;
 }
@@ -325,7 +309,7 @@ footer{
 <div class="container">
 
 <!-- مربع الترحيب -->
-<div class="glass-box welcome-box" id="welcomeBox">
+<div class="glass-box welcome-box fade-in" id="welcomeBox">
 <h1>شكراً لكم لاختيارنا</h1>
 <p class="subtitle">نسعد بتوثيق لحظاتكم في</p>
 <p style="font-size:1.6rem;font-weight:bold;margin-top:5px;color:#FFE5A3;">
@@ -334,7 +318,7 @@ Khawla Photography
 </div>
 
 <!-- باقي المحتوى -->
-<div id="restContent">
+<div class="hidden-content" id="restContent">
 
 <!-- الباقات -->
 <h2 class="section-title">البكجات والخدمات</h2>
@@ -400,10 +384,9 @@ Khawla Photography
 </ul>
 </div>
 
-<!-- آخر مربع بالحجم الكبير -->
-<div class="glass-box package-card" style="grid-column: span 2; max-width: 100%; margin: 0 auto;">
-<h3 style="font-size:2rem;">باقة المواليد</h3>
-<ul style="font-size:1.3rem;">
+<div class="glass-box package-card" style="grid-column: span 2; max-width: 50%; margin: 0 auto;">
+<h3>باقة المواليد</h3>
+<ul>
 <li>جلسة تصوير مولود</li>
 <li>إكسسوارات وديكورات</li>
 <li>تعديل 15 صورة</li>
@@ -438,7 +421,7 @@ Khawla Photography
 <div class="glass-box">
 <h2 style="font-size:1.8rem;margin-bottom:15px;color:#FFE5A3;">تواصلوا معنا</h2>
 <div class="social-buttons">
-<a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
+<a href="https://www.instagram.com/khawlh_photographer?igsh=YTl4ZXdvNGV3dXRq" class="social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
 <a href="https://www.tiktok.com/@khawla_photographer" class="social-btn tiktok"><i class="fab fa-tiktok"></i> TikTok</a>
 <a href="https://wa.me/201142308981" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
 </div>
@@ -452,23 +435,10 @@ Khawla Photography
 <footer>KHAWLA PHOTOGRAPHY © 2026</footer>
 
 <script>
-window.onload = function() {
-    const welcomeBox = document.getElementById('welcomeBox');
-    const restContent = document.getElementById('restContent');
+setTimeout(function() {
+    document.getElementById('restContent').classList.add('show');
+}, 2000);
 
-    // تظهر رسالة الترحيب بعد 500 ملي ثانية (نصف ثانية) من فتح الصفحة
-    setTimeout(() => {
-        welcomeBox.classList.add('welcome-animation');
-    }, 500);
-
-    // يظهر باقي المحتوى بسلاسة بعد أن يستقر الترحيب (بعد ثانيتين ونصف)
-    setTimeout(() => {
-        restContent.classList.add('show');
-    }, 2500); 
-};
-
-
-// --- كود زر العودة للأعلى ---
 let topBtn = document.getElementById("topBtn");
 window.onscroll = function() {
     topBtn.style.display = (window.scrollY > 300) ? "block" : "none";
@@ -477,7 +447,6 @@ topBtn.onclick = function() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 };
 
-// --- كود Lightbox (تكبير الصور) ---
 const images = document.querySelectorAll(".gallery-container img");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
