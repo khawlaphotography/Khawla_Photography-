@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khawla Al Gahrani | مصورة أعراس - لحظاتك الخالدة</title>
+
+    <!-- وسوم تحسين محركات البحث SEO -->
+    <meta name="description" content="خولة الجهراني - مصورة فوتوغرافية متخصصة في توثيق الأعراس والمناسبات السعيدة. نسعد بتوثيق يومك وصناعة أجمل الذكريات الخالدة.">
+    <meta name="keywords" content="خولة الجهراني, Khawla Al Gahrani, مصورة أعراس, تصوير مناسبات, مصورة فوتوغرافية, تصوير زواجات">
+    <meta name="author" content="Khawla Al Gahrani">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="language" content="Arabic">
+    <meta name="geo.region" content="SA">
+    <meta name="geo.placename" content="Egypt">
+
+    <!-- وسوم Open Graph للمشاركة في وسائل التواصل -->
+    <meta property="og:title" content="Khawla Al Gahrani | مصورة أعراس محترفة">
+    <meta property="og:description" content="نسعد بتوثيق يومك وسنصنع منه أجمل ذكرى">
+    <meta property="og:image" content="https://i.postimg.cc/MG84kx89/file-000000007dbc722fadab0344567326df.png">
+    <meta property="og:url" content="https://khawlaphotography.github.io/KhawlaPhotography/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Khawla Al Gahrani | مصورة أعراس">
+    <meta name="twitter:description" content="تصوير احترافي للأعراس والمناسبات">
+    <meta name="twitter:image" content="https://i.postimg.cc/MG84kx89/file-000000007dbc722fadab0344567326df.png">
+
+    <!-- رابط الموقع الأساسي -->
+    <link rel="canonical" href="https://khawlaphotography.github.io/KhawlaPhotography/">
+
+    <!-- أيقونة الموقع -->
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/MG84kx89/file-000000007dbc722fadab0344567326df.png">
+    <link rel="apple-touch-icon" href="https://i.postimg.cc/MG84kx89/file-000000007dbc722fadab0344567326df.png">
+
+    <!-- خطوط وأيقونات -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Schema Markup لمحركات البحث -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Khawla Al Gahrani - مصورة أعراس",
+        "image": "https://i.postimg.cc/MG84kx89/file-000000007dbc722fadab0344567326df.png",
+        "description": "خولة الجهراني - مصورة فوتوغرافية متخصصة في توثيق الأعراس والمناسبات السعيدة",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "مصر",
+            "addressRegion": "SA"
+        },
+        "url": "https://khawlaphotography.github.io/KhawlaPhotography/",
+        "telephone": "+201142308981",
+        "priceRange": "$$",
+        "openingHours": "Mo-Su 09:00-22:00",
+        "sameAs": [
+            "https://www.instagram.com/p/CXRJZd0I4nD/",
+            "https://www.tiktok.com/@khawla_photographer"
+        ]
+    }
+    </script>
+
+    <style>
+        /* الأنماط الأساسية */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Amiri', serif;
+            color: white;
+            background: linear-gradient(rgba(10,10,10,0.6), rgba(0,0,0,0.7)),
+                        url('https://i.postimg.cc/MG84kx89/file-000000007dbc722fadab0344567326df.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            padding: 30px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+        }
+
+        /* تأثيرات الحركة */
+        #welcomeBox {
+            opacity: 0;
+            transform: translateY(15px);
+            transition: opacity 1.8s cubic-bezier(0.4, 0, 0.2, 1), transform 1.8s cubic-bezier(0.4, 0, 0.2, 1);
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto 15px auto;
+        }
+
+        .welcome-animation {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+
+        #restContent {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 2s cubic-bezier(0.4, 0, 0.2, 1), transform 2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        #restContent.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .glass-box {
+            background: rgba(15,15,20,0.35);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: 30px;
+            padding: 25px 20px;
+            text-align: center;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+            transition: transform .3s ease, box-shadow .3s ease;
+        }
+
+        .glass-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+        }
+
+        .welcome-box {
+            background: rgba(15,15,20,0.5);
+            backdrop-filter: blur(25px);
+            border: 2px solid rgba(255,215,0,0.3);
+            width: 80%;
+            margin: 0 auto 15px auto;
+            position: relative;
+            z-index: 100;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 8px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            opacity: .9;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin: 15px 0 8px;
+            text-align: center;
+            font-weight: bold;
+            text-shadow: 1px 1px 5px black;
+        }
+
+        .section-subtitle {
+            font-size: 1.8rem;
+            margin: 25px 0 15px;
+            text-align: center;
+            font-weight: bold;
+            color: #FFE5A3;
+            border-bottom: 2px solid rgba(255,215,0,0.3);
+            padding-bottom: 8px;
+        }
+
+        /* شبكة الباقات */
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            width: 100%;
+        }
+
+        .package-card {
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .package-card:hover {
+            border-color: rgba(255, 215, 0, 0.6);
+            transform: translateY(-5px);
+            box-shadow: 0 25px 45px rgba(0,0,0,0.9);
+        }
+
+        .package-card h3 {
+            font-size: 1.7rem;
+            border-bottom: 2px solid rgba(255,215,0,0.5);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            color: #FFE5A3;
+        }
+
+        .package-card .price-tag {
+            font-size: 1.5rem;
+            color: #FFD966;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            flex-grow: 1;
+        }
+
+        li {
+            margin-bottom: 6px;
+            border-bottom: 1px dashed rgba(255,255,255,0.1);
+            padding-bottom: 5px;
+        }
+
+        .about-text {
+            font-style: italic;
+            font-size: 1.3rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .signature {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #FFD966;
+            letter-spacing: 1px;
+        }
+
+        .social-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0 8px;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            border: 1px solid rgba(255,255,255,0.3);
+            transition: all .3s ease;
+            min-width: 160px;
+        }
+
+        .social-btn i {
+            font-size: 1.5rem;
+        }
+
+        .social-btn.instagram {
+            background: linear-gradient(45deg,#f09433,#dc2743,#bc1888);
+        }
+
+        .social-btn.tiktok {
+            background: #000;
+            border-color: #25f4ee;
+        }
+
+        .social-btn.whatsapp {
+            background: #25D366;
+        }
+
+        .social-btn:hover {
+            transform: scale(1.05) translateY(-3px);
+            filter: brightness(1.2);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
+
+        /* معرض الصور */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+            max-height: 500px;
+            overflow-y: auto;
+            padding: 10px 5px;
+            scrollbar-width: thin;
+            scrollbar-color: #FFD966 rgba(255,255,255,0.1);
+        }
+
+        .gallery-container::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .gallery-container::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+
+        .gallery-container::-webkit-scrollbar-thumb {
+            background: #FFD966;
+            border-radius: 10px;
+        }
+
+        .gallery-container img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.03);
+        }
+
+        /* أنماط التعليقات */
+        .testimonials-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .empty-testimonials {
+            text-align: center;
+            padding: 30px;
+            color: rgba(255,255,255,0.6);
+            font-style: italic;
+            font-size: 1.2rem;
+            border: 2px dashed rgba(255,215,0,0.3);
+            border-radius: 20px;
+        }
+
+        .testimonial-item {
+            background: rgba(255,255,255,0.03);
+            border-radius: 20px;
+            padding: 20px;
+            border-right: 4px solid #FFD966;
+            text-align: right;
+        }
+
+        .testimonial-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .testimonial-name {
+            color: #FFE5A3;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .testimonial-time {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+        }
+
+        .testimonial-text {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .testimonial-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .like-button {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: none;
+            border: none;
+            color: #ff6b6b;
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 5px 15px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .like-button:hover {
+            background: rgba(255,107,107,0.1);
+        }
+
+        .like-count {
+            font-weight: bold;
+        }
+
+        /* نافذة جميع التعليقات */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 3000;
+        }
+
+        .modal-content {
+            background: rgba(15,15,20,0.35);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: 30px;
+            padding: 35px 30px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+            position: relative;
+            color: white;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+            animation: modalFadeIn 0.5s;
+        }
+
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            opacity: 0.8;
+            cursor: pointer;
+            transition: 0.3s;
+            line-height: 1;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(15,15,20,0.5);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.18);
+        }
+
+        .close-modal:hover {
+            color: #FFE5A3;
+            opacity: 1;
+            transform: scale(1.1);
+            background: rgba(255,215,0,0.15);
+            border-color: rgba(255,215,0,0.3);
+        }
+
+        .all-testimonials-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .all-testimonial-item {
+            background: rgba(255,255,255,0.03);
+            border-radius: 15px;
+            padding: 15px;
+            border-right: 3px solid #FFD966;
+        }
+
+        .all-testimonial-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .all-testimonial-name {
+            color: #FFE5A3;
+            font-weight: bold;
+        }
+
+        .all-testimonial-time {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.8rem;
+        }
+
+        .all-like-button {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background: none;
+            border: none;
+            color: #ff6b6b;
+            cursor: pointer;
+        }
+
+        /* نموذج إضافة تعليق */
+        .add-testimonial-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: right;
+        }
+
+        .add-testimonial-form input,
+        .add-testimonial-form textarea {
+            padding: 8px 12px;
+            border-radius: 30px;
+            border: 1px solid rgba(255,215,0,0.3);
+            background: rgba(255,255,255,0.1);
+            color: white;
+            font-family: 'Amiri', serif;
+            font-size: 0.95rem;
+        }
+
+        .add-testimonial-form textarea {
+            border-radius: 15px;
+            resize: vertical;
+            min-height: 60px;
+        }
+
+        .add-testimonial-form input:focus,
+        .add-testimonial-form textarea:focus {
+            outline: none;
+            border-color: #FFD966;
+        }
+
+        .form-buttons {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+        }
+
+        .submit-btn {
+            padding: 8px 15px;
+            border-radius: 30px;
+            background: #FFD966;
+            color: black;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+            flex: 2;
+            font-family: 'Amiri', serif;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            background: #FFE5A3;
+            box-shadow: 0 5px 15px rgba(255,217,102,0.3);
+        }
+
+        .view-all-btn {
+            padding: 8px 15px;
+            border-radius: 30px;
+            background: #FFD966;
+            color: black;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+            flex: 1;
+            font-family: 'Amiri', serif;
+            transition: all 0.3s ease;
+        }
+
+        .view-all-btn:hover {
+            transform: translateY(-2px);
+            background: #FFE5A3;
+            box-shadow: 0 5px 15px rgba(255,217,102,0.3);
+        }
+
+        /* مودال الباقات */
+        .modal-content h2 {
+            font-size: 2.2rem;
+            color: #FFE5A3;
+            border-bottom: 2px solid rgba(255,215,0,0.5);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .modal-content .detail-box {
+            background: rgba(15,15,20,0.3);
+            border-radius: 20px;
+            padding: 20px;
+            margin: 15px 0;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .modal-content .price-box {
+            font-size: 2rem;
+            color: #FFE5A3;
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255,215,0,0.1);
+            border-radius: 50px;
+            border: 1px solid rgba(255,215,0,0.3);
+        }
+
+        .modal-content .notes-box {
+            background: rgba(0,0,0,0.3);
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px 0;
+            border-right: 3px solid #FFD966;
+        }
+
+        .modal-content .notes-box h3 {
+            color: #FFD966;
+            margin-bottom: 15px;
+        }
+
+        .modal-wa-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 60px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            border: 1px solid rgba(255,255,255,0.2);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .modal-wa-btn:hover {
+            transform: scale(1.03) translateY(-2px);
+            background: #20b859;
+            box-shadow: 0 15px 30px rgba(37,211,102,0.4);
+        }
+
+        /* Lightbox للصور */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            cursor: pointer;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 85%;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.2);
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        /* زر العودة للأعلى */
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            padding: 12px 17px;
+            border: none;
+            border-radius: 50%;
+            background: #FFD966;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            display: none;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.5);
+            transition: all 0.3s ease;
+            z-index: 1500;
+        }
+
+        #topBtn:hover {
+            transform: scale(1.1);
+            background: #FFE5A3;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 15px;
+            opacity: .8;
+            font-size: 0.9rem;
+            text-align: center;
+            letter-spacing: 2px;
+            background: rgba(0,0,0,0.3);
+            width: 100%;
+        }
+
+        /* تحسينات للشاشات الصغيرة */
+        @media(max-width:768px) {
+            h1 { font-size: 2.2rem; }
+            .section-title { font-size: 1.8rem; }
+            .container { width: 95%; }
+            .glass-box { padding: 20px 12px; }
+            .about-text { font-size: 1.2rem; }
+            .social-btn { padding: 10px 20px; font-size: 1.1rem; min-width: 140px; }
+            
+            .packages-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .welcome-box {
+                width: 95%;
+            }
+            
+            .gallery-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .form-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- مربع الترحيب -->
+        <div class="glass-box welcome-box" id="welcomeBox">
+            <h1>شكراً لاختيارك لنا</h1>
+            <p class="subtitle">نسعد بتوثيق يومك وسنصنع منه أجمل ذكرى</p>
+            <p style="font-size:1.6rem;font-weight:bold;margin-top:5px;color:#FFE5A3;">يتم التصوير بأحدث المعدات والكاميرات</p>
+        </div>
+
+        <!-- باقي المحتوى -->
+                    <div class="glass-box package-card" data-package="offer">
+                    <h3>عرض التوفير</h3>
+                    <ul>
+                        <li>تصوير لمدة ساعتين</li>
+                        <li>فوتوسيشن شامل 100$</li>
+                        <li>مع تصوير الزفة و رقصة العرسان</li>
+                        <li>تسليم على فلاشة</li>
+                    </ul>
+                    <div class="price-tag">170$</div>
+                </div>
+
+                <!-- 2. الباقة الأولى -->
+                <div class="glass-box package-card" data-package="package1">
+                    <h3>البكج الاول</h3>
+                    <ul>
+                        <li>تصوير فوتو 3 ساعات</li>
+                        <li>فوتوسيشن شامل العروسين والاهل والزفة</li>
+                        <li>طباعة 6 صفحات البوم عادي</li>
+                        <li>تسليم الصور فلاشة</li>
+                    </ul>
+                    <div class="price-tag">160$</div>
+                </div>
+
+                <!-- 3. الباقة الثانية -->
+                <div class="glass-box package-card" data-package="package2">
+                    <h3>البكج الثاني</h3>
+                    <ul>
+                        <li>تصوير فوتو 4 ساعات</li>
+                        <li>طباعة البوم حراري 7 صفحات</li>
+                        <li>طباعة 10 صور هدية</li>
+                        <li>تسليم الصور فلاشة</li>
+                    </ul>
+                    <div class="price-tag">195$</div>
+                </div>
+
+                <!-- 4. الباقة الفضية -->
+                <div class="glass-box package-card" data-package="package3">
+                    <h3>البكج الفضي</h3>
+                    <ul>
+                        <li>تصوير 6 ساعات</li>
+                        <li>طباعة 6 صفحات البوم حراري</li>
+                        <li>طباعة 10 صور هدية</li>
+                        <li>تسليم الصور فلاشة</li>
+                    </ul>
+                    <div class="price-tag">220$</div>
+                </div>
+            </div>
+
+            <!-- ===== القسم الثاني: عروض FULL DAY ===== -->
+            <h2 class="section-subtitle">عروض FULL DAY</h2>
+            <div class="packages-grid">
+                <!-- 5. العرض الذهبي -->
+                <div class="glass-box package-card" data-package="gold">
+                    <h3>العرض الذهبي</h3>
+                    <ul>
+                        <li>فوتوسيشن احترافي العروسين</li>
+                        <li>تفاصيل القاعة والديكوريشن والزفة</li>
+                        <li>تجهيزات العروسة من اول اليوم</li>
+                        <li>طباعة 10 صور + 10 صفحات البوم حراري</li>
+                    </ul>
+                    <div class="price-tag">280$</div>
+                </div>
+
+                <!-- 6. العرض الالماسي -->
+                <div class="glass-box package-card" data-package="diamond">
+                    <h3>العرض الالماسي</h3>
+                    <ul>
+                        <li>فوتوسيشن احترافي العروسين</li>
+                        <li>تفاصيل القاعة والديكوريشن والزفة</li>
+                        <li>تجهيزات العروسة من اول اليوم</li>
+                        <li>10 صفحات البوم + 5 ميني البوم</li>
+                    </ul>
+                    <div class="price-tag">300$</div>
+                </div>
+
+                <!-- 7. العرض المخملي -->
+                <div class="glass-box package-card" data-package="velvet">
+                    <h3>العرض المخملي</h3>
+                    <ul>
+                        <li>فل داي فوتو كامل</li>
+                        <li>البوم جولدن فاخر</li>
+                        <li>تصوير احترافي شامل</li>
+                        <li>تسليم كامل التفاصيل</li>
+                    </ul>
+                    <div class="price-tag">400$</div>
+                </div>
+            </div>
+
+            <!-- ===== القسم الثالث: عروض تصوير الفيديو ===== -->
+            <h2 class="section-subtitle">عروض تصوير الفيديو</h2>
+            <div class="packages-grid">
+                <!-- 8. فيديو مستمر أساسي -->
+                <div class="glass-box package-card" data-package="video1">
+                    <h3>فيديو مستمر</h3>
+                    <ul>
+                        <li>تصوير الزفة</li>
+                        <li>تقطيع جاتو</li>
+                        <li>رقص العرسان</li>
+                        <li>فيديو ثابت</li>
+                    </ul>
+                    <div class="price-tag">80$</div>
+                </div>
+
+                <!-- 9. فيديو مستمر شامل -->
+                <div class="glass-box package-card" data-package="video2">
+                    <h3>فيديو مستمر شامل</h3>
+                    <ul>
+                        <li>تصوير الزفة كامل</li>
+                        <li>مونتاج احترافي</li>
+                        <li>تسليم سريع</li>
+                        <li>جودة عالية</li>
+                    </ul>
+                    <div class="price-tag">100$</div>
+                </div>
+
+                <!-- 10. برومو هاف داي -->
+                <div class="glass-box package-card" data-package="video3">
+                    <h3>برومو هاف داي</h3>
+                    <ul>
+                        <li>تصوير نصف يوم</li>
+                        <li>مونتاج احترافي</li>
+                        <li>تسليم كامل</li>
+                        <li>جودة عالية</li>
+                    </ul>
+                    <div class="price-tag">150$</div>
+                </div>
+
+                <!-- 11. برومو فل داي -->
+                <div class="glass-box package-card" data-package="video4">
+                    <h3>برومو فل داي</h3>
+                    <ul>
+                        <li>تصوير كامل اليوم</li>
+                        <li>تصوير العروسة من البداية</li>
+                        <li>الميكب والفستان</li>
+                        <li>كل التفاصيل والزفة</li>
+                    </ul>
+                    <div class="price-tag">180$</div>
+                </div>
+
+                <!-- 12. عرض بدون وجه تشويقي (يمتد على عمودين) -->
+                <div class="glass-box package-card" data-package="video5" style="grid-column: span 2; max-width: 100%; margin: 0 auto;">
+                    <h3>عرض بدون وجه تشويقي</h3>
+                    <ul style="font-size:1.2rem;">
+                        <li>تفاصيل كاملة بدون وجه تشويقي</li>
+                        <li>تسليم سريع</li>
+                        <li>جودة عالية</li>
+                        <li>سعر خاص</li>
+                    </ul>
+                    <div class="price-tag">70$</div>
+                </div>
+            </div>
+            <!-- معرض الصور -->
+            <h2 class="section-title">معرض الأعمال</h2>
+            <div class="glass-box">
+                <div class="gallery-container">
+                    <img src="https://image2url.com/r2/default/images/1771106106448-e327cc60-24d0-4449-b8ad-25a83dd346e4.jpg" alt="تصوير زفاف">
+                    <img src="https://i.postimg.cc/R0tRDFdC/20260214-233410.jpg" alt="عروس">
+                    <img src="https://i.postimg.cc/NFskFxc0/20260214-233420.jpg" alt="تصوير فوتوغرافي">
+                    <img src="https://image2url.com/r2/default/images/1771105531956-ebdfebba-444c-493b-a5e8-6ad5de192b4b.jpg" alt="تصوير">
+                    <img src="https://image2url.com/r2/default/images/1771105592424-7968cc33-60d8-4262-92b1-a4194038595a.jpg" alt="كاميرا">
+                    <img src="https://image2url.com/r2/default/images/1771105620905-b45e94b7-bf64-4582-8f52-be31df4535a7.jpg" alt="عدسة">
+                    <img src="https://image2url.com/r2/default/images/1771105679830-f15aa16e-253a-49ec-9e45-ab6559257ad7.jpg" alt="تصوير">
+                </div>
+            </div>
+
+            <!-- قسم شهادات العملاء -->
+            <h2 class="section-title">اراء العملاء</h2>
+            <div class="glass-box">
+                <div id="testimonialsContainer" class="testimonials-container">
+                    <!-- التعليقات تظهر هنا عبر JavaScript -->
+                </div>
+            </div>
+
+            <!-- نموذج إضافة تعليق جديد -->
+            <div class="glass-box" style="margin-top: 20px; padding: 15px;">
+                <h3 style="color:#FFE5A3; margin-bottom:10px; font-size:1.3rem;">
+                    <i class="fas fa-pen"></i> شاركنا رأيك
+                </h3>
+                <form id="addTestimonialForm" class="add-testimonial-form">
+                    <input type="text" id="newName" placeholder="الاسم" required>
+                    <textarea id="newComment" placeholder="اكتب رأيك هنا..." required></textarea>
+                    <div class="form-buttons">
+                        <button type="submit" class="submit-btn">إرسال</button>
+                        <button type="button" id="showTestimonialsBtn" class="view-all-btn">عرض جميع الآراء</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- النبذة -->
+            <h2 class="section-title">KHAWLA AL GAHRANI</h2>
+            <div class="glass-box">
+                <p class="about-text">
+                    "في عالمنا، التصوير ليس مجرد ضغطة زر، بل هو تجميد للحظات والمشاعر لتبقى حية للأبد."
+                </p>
+                <span class="signature">Khawla</span>
+            </div>
+
+            <!-- التواصل -->
+            <div class="glass-box">
+                <h2 style="font-size:1.8rem;margin-bottom:15px;color:#FFE5A3;">تواصلوا معنا</h2>
+                <div class="social-buttons">
+                    <a href="https://www.instagram.com/p/CXRJZd0I4nD/" class="social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://www.tiktok.com/@khawla_photographer" class="social-btn tiktok"><i class="fab fa-tiktok"></i> TikTok</a>
+                    <a href="https://wa.me/201142308981" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </div> <!-- restContent -->
+    </div> <!-- container -->
+
+    <button id="topBtn">↑</button>
+    <div class="lightbox" id="lightbox"><img id="lightbox-img"></div>
+    <footer>KHAWLA AL GAHRANI © 2026</footer>
+
+    <!-- مودال الباقات -->
+    <div id="packageModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- مودال جميع التعليقات -->
+    <div id="allTestimonialsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeAllTestimonialsModal()">&times;</span>
+            <h2 style="color:#FFE5A3;">📝 جميع الآراء</h2>
+            <div id="allTestimonialsList" class="all-testimonials-list"></div>
+        </div>
+    </div>
+
+    <script>
+        // ===== JSONBin.io الإعدادات =====
+        const MASTER_KEY = "$2a$10$674DeomPKlC0zd4hmiftveDrQ2GMoi3GUwUx7hGLMzys26kwqR.xC";
+        const BIN_ID = "6991a8ebd0ea881f40bc0b28";
+        const BIN_URL = `https://api.jsonbin.io/v3/b/${BIN_ID}`;
+
+        // بيانات الباقات التفصيلية
+                const packagesData = {
+            offer: {
+                title: 'عرض التوفير',
+                details: '<div class="detail-box"><p>تصوير لمدة ساعتين</p><p>تصوير فوتوسيشن 100$</p><p>فيديو تصوير الزفة ورقص العرسان و الجاتو</p><p>بدون طباعة الصور - تسلم الصور على فلاشة</p></div>',
+                price: '170$'
+            },
+            package1: {
+                title: 'البكج الاول',
+                details: '<div class="detail-box"><p>تصوير لمدة 3 ساعات</p><p>فوتوسيشن شامل تفاصيل العروسين والعروسه والعريس والزفه والاهل</p><p>طباعة 6 صفحات البوم عادي</p><p>تسليم الصور على فلاشة</p><p>تعديل كامل الصور من إضاءة وألوان</p></div>',
+                price: '160$'
+            },
+            package2: {
+                title: 'البكج الثاني',
+                details: '<div class="detail-box"><p>تصوير لمدة 4 ساعات</p><p>فوتوسيشن احترافي شامل الديكوريشن وجميع تفاصيل العروسين والعريس والعروسه والاهل والزفة</p><p>تصوير تقطيع الجاتو</p><p>طباعة 10 صور حجم A5 هدية</p><p>طباعة 7 صفحات البوم حراري</p><p>تسلم جميع الصور على فلاشة</p><p>طباعة صورة هدية للعروسة</p></div>',
+                price: '195$'
+            },
+            package3: {
+                title: 'البكج الفضي',
+                details: '<div class="detail-box"><p>تصوير لمدة 6 ساعات</p><p>فوتوسيشن احترافي شامل الديكوريشن وجميع تفاصيل العروسين والعريس والعروسه والاهل والزفة</p><p>تصوير تقطيع الجاتو</p><p>طباعة 10 صورة حجم A5</p><p>تسلم جميع الصور على فلاشة</p></div>',
+                price: '220$'
+            },
+            gold: {
+                title: 'العرض الذهبي',
+                details: '<div class="detail-box"><p>فوتوسيشن احترافي العروسين</p><p>تفاصيل القاعة والديكوريشن والزفة ودخول الأهل</p><p>تجهيزات العروسه من اول اليوم في الصالون</p><p>طباعة 10 صور حجم A5</p><p>طباعة 10 صفحات البوم حراري</p><p>تسليم الصور على فلاشة</p></div>',
+                price: '280$'
+            },
+            diamond: {
+                title: 'العرض الالماسي',
+                details: '<div class="detail-box"><p>فوتوسيشن احترافي العروسين</p><p>تفاصيل القاعة والديكوريشن والزفة ودخول الأهل</p><p>تجهيزات العروسه من اول اليوم</p><p>طباعة 10 صور + 10 صفحات البوم حراري + 5 ميني البوم</p><p>صورة مكبرة خشبية</p><p>تسليم الصور على فلاشة</p></div>',
+                price: '300$'
+            },
+            velvet: {
+                title: 'العرض المخملي',
+                details: '<div class="detail-box"><p>فل داي فوتو مع الالبوم الجولدن</p><p>تصوير احترافي شامل لجميع التفاصيل</p><p>البوم فاخر</p></div>',
+                price: '400$'
+            },
+            video1: {
+                title: 'فيديو مستمر',
+                details: '<div class="detail-box"><p>فيديو مستمر يشمل:</p><p>تصوير الزفة</p><p>تقطيع جاتو</p><p>رقص العرسان</p><p>فيديو ثابت</p></div>',
+                price: '80$'
+            },
+            video2: {
+                title: 'فيديو مستمر شامل',
+                details: '<div class="detail-box"><p>فيديو مستمر يشمل:</p><p>تصوير الزفة كامل</p><p>مونتاج احترافي</p></div>',
+                price: '100$'
+            },
+            video3: {
+                title: 'برومو هاف داي',
+                details: '<div class="detail-box"><p>برومو هاف داي</p><p>تصوير نصف يوم</p><p>مونتاج احترافي</p></div>',
+                price: '150$'
+            },
+            video4: {
+                title: 'برومو فل داي',
+                details: '<div class="detail-box"><p>برومو احترافي فل داي:</p><p>تصوير العروسه من بداية اليوم</p><p>الميكب والفستان والتفاصيل</p><p>الزفة وتقطيع الجاتو</p><p>السيشن وكل التفاصيل</p></div>',
+                price: '180$'
+            },
+            video5: {
+                title: 'عرض بدون وجه تشويقي',
+                details: '<div class="detail-box"><p>تفاصيل كاملة بدون وجه تشويقي</p><p>عرض خاص</p></div>',
+                price: '70$'
+            }
+        };
+
+        // ===== التحكم في توقيت العرض الخاص (تاريخ ثابت) =====
+        // ✅ هذا التاريخ ثابت وما يتغير بتحديث الصفحة
+var showSpecialOffer = true;
+
+// تاريخ انتهاء العرض: 22 فبراير 2026 الساعة 12 منتصف الليل (بتوقيت مصر)
+const offerEndTime = new Date('2026-02-15T23:59:59+02:00');
+        function updateOfferTimer() {
+            const now = new Date();
+            const remaining = offerEndTime - now;
+            
+            if (remaining <= 0) {
+                document.getElementById('offerTimer').innerHTML = '<span style="color:#FFD966;">انتهى العرض</span>';
+                return;
+            }
+            
+            const days = Math.floor(remaining / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((remaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+            
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+        }
+
+        // ===== دوال JSONBin.io =====
+        async function loadTestimonials() {
+            try {
+                const response = await fetch(`${BIN_URL}/latest`, {
+                    headers: { 'X-Master-Key': MASTER_KEY }
+                });
+                if (!response.ok) return [];
+                const data = await response.json();
+                return data.record.testimonials || [];
+            } catch (error) {
+                console.error("خطأ في جلب التعليقات:", error);
+                return [];
+            }
+        }
+
+        async function saveTestimonials(testimonials) {
+            try {
+                const response = await fetch(BIN_URL, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-Master-Key': MASTER_KEY
+                    },
+                    body: JSON.stringify({ testimonials: testimonials })
+                });
+                return response.ok;
+            } catch (error) {
+                console.error("خطأ في الحفظ:", error);
+                return false;
+            }
+        }
+
+        async function displayTestimonials() {
+            const container = document.getElementById('testimonialsContainer');
+            if (!container) return;
+            
+            const testimonials = await loadTestimonials();
+            
+            if (testimonials.length === 0) {
+                container.innerHTML = '<div class="empty-testimonials">لا توجد آراء بعد... كن أول من يشارك!</div>';
+                return;
+            }
+            
+            const latest = testimonials.slice(-3).reverse();
+            
+            container.innerHTML = latest.map((t, index) => {
+                const originalIndex = testimonials.length - 1 - index;
+                return `
+                    <div class="testimonial-item">
+                        <div class="testimonial-header">
+                            <span class="testimonial-name">${t.name}</span>
+                            <span class="testimonial-time">${getTimeAgo(t.date)}</span>
+                        </div>
+                        <p class="testimonial-text">"${t.comment}"</p>
+                        <div class="testimonial-footer">
+                            <button class="like-button" onclick="handleLike(${originalIndex})">
+                                <i class="fas fa-heart"></i>
+                                <span class="like-count">${t.likes || 0}</span>
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            await displayAllTestimonials(testimonials);
+        }
+
+        async function displayAllTestimonials(testimonials) {
+            const container = document.getElementById('allTestimonialsList');
+            if (!container) return;
+            
+            if (testimonials.length === 0) {
+                container.innerHTML = '<div class="empty-testimonials">لا توجد آراء بعد...</div>';
+                return;
+            }
+            
+            const reversed = [...testimonials].reverse();
+            
+            container.innerHTML = reversed.map((t, index) => {
+                const originalIndex = testimonials.length - 1 - index;
+                return `
+                    <div class="all-testimonial-item">
+                        <div class="all-testimonial-header">
+                            <span class="all-testimonial-name">${t.name}</span>
+                            <span class="all-testimonial-time">${getTimeAgo(t.date)}</span>
+                        </div>
+                        <p class="all-testimonial-text">"${t.comment}"</p>
+                        <div class="all-testimonial-footer">
+                            <button class="all-like-button" onclick="handleLike(${originalIndex})">
+                                <i class="fas fa-heart"></i> ${t.likes || 0}
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        async function addTestimonial(name, comment) {
+            const testimonials = await loadTestimonials();
+            
+            testimonials.push({
+                name: name,
+                comment: comment,
+                date: new Date().toISOString(),
+                likes: 0
+            });
+            
+            const saved = await saveTestimonials(testimonials);
+            
+            if (saved) {
+                alert("✅ تم إضافة رأيك! شكراً لك");
+                await displayTestimonials();
+            } else {
+                alert("❌ حدث خطأ في الحفظ، حاول مرة أخرى");
+            }
+        }
+
+        async function handleLike(index) {
+            const testimonials = await loadTestimonials();
+            if (!testimonials[index]) return;
+            
+            testimonials[index].likes = (testimonials[index].likes || 0) + 1;
+            await saveTestimonials(testimonials);
+            await displayTestimonials();
+        }
+
+        function getTimeAgo(dateString) {
+            const now = new Date();
+            const past = new Date(dateString);
+            const diffMin = Math.floor((now - past) / 60000);
+            
+            if (diffMin < 1) return 'الآن';
+            if (diffMin < 60) return `منذ ${diffMin} دقيقة`;
+            if (diffMin < 1440) return `منذ ${Math.floor(diffMin / 60)} ساعة`;
+            return `منذ ${Math.floor(diffMin / 1440)} يوم`;
+        }
+
+        function openPackageModal(packageKey) {
+            const data = packagesData[packageKey];
+            if (!data) return;
+
+            const generalNotes = `
+                <div class="notes-box">
+                    <h3>ملاحظات هامة</h3>
+                    <p>منكان الفستان ب ٥٠٠ج</p>
+                    <p>اي طلبات خاصة للعروسة تنضاف للعروض ويتم الإتفاق عليها</p>
+                    <p>انواع الالبومات تنضاف بالسعر حسب رغبة العروسة (السيراميك و المخمل)</p>
+                    <p>تعديل الصور يشمل كامل العروض</p>
+                    <p>تثبيت الحجز بدفع نص العربون</p>
+                    <p>اي وقت إضافي: ١٠٠٠ جنيه للساعة</p>
+                    <p>المواصلات على أصحاب العرس</p>
+                    <p>تسليم الصور خلال شهر ونص</p>
+                    <p>الاستعجال: إضافة 60$</p>
+                </div>
+            `;
+
+            const contactInfo = `
+                <div class="contact-box">
+                    <p style="margin: 10px 0;">
+                        <a href="https://www.instagram.com/p/CXRJZd0I4nD/" target="_blank">Instagram</a> |
+                        <a href="https://www.tiktok.com/@khawla_photographer" target="_blank">TikTok</a>
+                    </p>
+                    <p style="color: #FFD966;">KHAWLA AL GAHRANI</p>
+                </div>
+            `;
+
+            const fullContent = `
+                <h2>${data.title}</h2>
+                ${data.details}
+                <div class="price-box">${data.price}</div>
+                ${generalNotes}
+                ${contactInfo}
+                <a href="https://wa.me/201142308981?text=${encodeURIComponent('السلام عليكم، أريد الاستفسار عن ' + data.title)}" class="modal-wa-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> احجز الآن عبر واتساب
+                </a>
+            `;
+
+            document.getElementById('modalContent').innerHTML = fullContent;
+            document.getElementById('packageModal').style.display = 'flex';
+        }
+
+        function closeAllTestimonialsModal() {
+            document.getElementById('allTestimonialsModal').style.display = 'none';
+        }
+
+        // ===== أحداث الصفحة =====
+        window.onload = function() {
+            setTimeout(() => {
+                document.getElementById('welcomeBox').classList.add('welcome-animation');
+            }, 500);
+            
+            setTimeout(() => {
+                document.getElementById('restContent').classList.add('show');
+            }, 2500);
+            
+            displayTestimonials();
+            
+            // إضافة العرض الخاص - بس إذا showSpecialOffer = true
+if (showSpecialOffer) {
+    const specialOfferHTML = `
+        <div class="glass-box" style="background: rgba(255,215,0,0.15); border:2px solid #FFD966; margin-bottom:20px; padding: 15px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap;">
+                <div style="text-align: right;">
+                    <h3 style="color:#FFE5A3; margin:0; font-size:1.3rem;">عرض مؤقت🔥</h3>
+                    <p style="margin:5px 0 0 0; font-size:0.95rem;">احجز أي بكج واحصل على <strong>البوم صور هدية</strong></p>
+                </div>
+                <div id="offerTimer" style="background: rgba(0,0,0,0.3); padding:8px 15px; border-radius:50px; border:1px solid #FFD966; font-size:0.9rem; min-width: 200px; text-align: center;">
+                    <i class="fas fa-clock" style="color:#FFD966; margin-left:5px;"></i>
+                    <span style="color:#FFE5A3;">ينتهي العرض بعد</span><br>
+                    <span id="days">0</span>d <span id="hours">0</span>h <span id="minutes">0</span>m
+                </div>
+            </div>
+        </div>
+    `;
+    
+    document.getElementById('restContent').insertAdjacentHTML('afterbegin', specialOfferHTML);
+}
+                        
+            updateOfferTimer();
+            setInterval(updateOfferTimer, 60000);
+        };
+
+        document.getElementById('addTestimonialForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('newName').value.trim();
+            const comment = document.getElementById('newComment').value.trim();
+            
+            if (name && comment) {
+                addTestimonial(name, comment);
+                this.reset();
+            }
+        });
+
+        document.getElementById('showTestimonialsBtn')?.addEventListener('click', function() {
+            document.getElementById('allTestimonialsModal').style.display = 'flex';
+            displayTestimonials();
+        });
+
+        document.querySelectorAll('.package-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const packageKey = this.dataset.package;
+                if (packageKey && packagesData[packageKey]) {
+                    openPackageModal(packageKey);
+                }
+            });
+        });
+
+        document.querySelectorAll('.close-modal').forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.closest('.modal').style.display = 'none';
+            });
+        });
+
+        window.addEventListener('click', function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        });
+
+        const topBtn = document.getElementById("topBtn");
+        window.onscroll = function() {
+            topBtn.style.display = window.scrollY > 300 ? "block" : "none";
+        };
+        
+        topBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
+        const images = document.querySelectorAll(".gallery-container img");
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+
+        images.forEach(img => {
+            img.addEventListener("click", () => {
+                lightbox.style.display = "flex";
+                lightboxImg.src = img.src;
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        lightbox.addEventListener("click", () => {
+            lightbox.style.display = "none";
+            document.body.style.overflow = 'auto';
+        });
+    </script>
+</body>
+    </html>
