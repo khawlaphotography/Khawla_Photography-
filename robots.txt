@@ -1,0 +1,16 @@
+# منع روبوتات الذكاء الاصطناعي المعروفة
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# ومنع باقي الروبوتات أيضاً إن أردت
+User-agent: *
+Disallow: /
